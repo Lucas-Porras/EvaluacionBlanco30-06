@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConContrIgual">
+
+    <EditText
+        android:id="@+id/tv_pwdActual"
+        android:layout_width="206dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="550dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Bien" />
+
+    <EditText
+        android:id="@+id/tv_pwdNueva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ActualNueva"
+        app:layout_constraintStart_toStartOf="@+id/tv_pwdActual"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pwdActual2" />
+
+    <TextView
+        android:id="@+id/nose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Contraseña actual"
+        app:layout_constraintBottom_toTopOf="@+id/tv_pwdActual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Mal" />
+
+    <TextView
+        android:id="@+id/tv_pwdActual2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Contraseña nueva"
+        app:layout_constraintBottom_toTopOf="@+id/tv_pwdNueva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pwdActual" />
+
+    <Button
+        android:id="@+id/btn_ActualNueva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="352dp"
+        android:text="Cambiar contraseña"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_pwdNueva"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pwdNueva" />
+
+    <ImageView
+        android:id="@+id/img_Mal"
+        android:layout_width="85dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/nose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/img_Bien"
+        android:layout_width="84dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="54dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_pwdActual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/presence_online" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
